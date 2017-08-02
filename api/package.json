@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "couchdb": "^0.3.8",
-    "hapi": "^16.5.0"
+    "hapi": "^16.5.0",
+    "promised-io": "^0.3.5"
   }
 }

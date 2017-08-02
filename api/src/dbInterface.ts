@@ -1,22 +1,15 @@
 import * as DB from 'couchdb'
 
-interface Construct {
-    host: string;
-    port: string;
-    dbName: string;
-    docName: string;
+class Couch {
+    public Instance
+
+    constructor(host: string, port: number) {
+        this.Instance = DB.createClient(port, host)
+    }
+
+    createDB(dbName: string) {
+        return this.Instance.db(dbName)
+    }
 }
 
-function Create(construct: Construct) {
-    let client = DB.createClient(construct.host, construct.port);
-    let db = client.db(construct.dbName);
-    return 1;
-}
-
-function Retrieve(construct: Construct) {}
-
-function Insert(construct: Construct) {
-
-}
-
-export default {}
+export default Couch
