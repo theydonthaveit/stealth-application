@@ -1,30 +1,19 @@
 {
   "name": "foodtech-api",
   "version": "1.0.0",
-  "description": "The API to link FoodTech DB with middlewear and frontend",
-  "main": "server.js",
+  "description": "API to connect front-end to back-end",
+  "main": "serve.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/theydonthaveit/stealth-application.git"
+    "url": "git+ssh://git@github.com/theydonthaveit/foodtech_node.git"
   },
-  "author": "Alan Williams <theydonthaveit@gmail.com>",
+  "author": "Alan Williams",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/theydonthaveit/stealth-application/issues"
+    "url": "https://github.com/theydonthaveit/foodtech_node/issues"
   },
-  "homepage": "https://github.com/theydonthaveit/stealth-application#readme",
-  "devDependencies": {
-    "ts-node": "^3.3.0",
-    "typescript": "^2.4.2"
-  },
-  "dependencies": {
-    "couchdb": "^0.3.8",
-    "hapi": "^16.5.0",
-    "promised-io": "^0.3.5"
-  }
+  "homepage": "https://github.com/theydonthaveit/foodtech_node#readme"
 }
